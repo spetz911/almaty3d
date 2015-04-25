@@ -152,3 +152,14 @@ set (CPACK_GENERATOR "TBZ2")
 include(CPack)
 
 
+FIND_LIBRARY(COCOA_LIBRARY Cocoa )
+FIND_LIBRARY(IOKIT_LIBRARY IOKit )
+FIND_LIBRARY(OPENGL_LIBRARY OpenGL)
+
+
+add_executable(tryCocoa tryCocoa.m)
+
+target_link_libraries(tryCocoa ${COCOA_LIBRARY} ${IOKIT_LIBRARY} ${OPENGL_LIBRARY})
+
+add_subdirectory(tutorial08)
+
