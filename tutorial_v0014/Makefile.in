@@ -1,0 +1,15 @@
+CXXFLAGS += -I/opt/local/include
+
+LDFLAGS += -L/opt/local/lib -lGLFW -framework OpenGL
+
+
+FILES = ../common/controls.o ../common/shader.o ../common/texture.o \
+../common/objloader.o ../common/tangentspace.o ../common/vboindexer.o \
+../common/quaternion_utils.o ../common/text2D.o tutorial05.o
+
+
+all: $(FILES)
+	clang++ $(CXXFLAGS) $(FILES) $(LDFLAGS)
+
+clean:
+	rm -f $(FILES)

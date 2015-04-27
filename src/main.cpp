@@ -206,7 +206,7 @@ private:
 
         // Create and compile our GLSL program from the shaders
 
-        std::string pathPrefix = "/Users/oleg/_data/";
+        std::string pathPrefix = "/Users/oleg/data/";
         std::string vxShaderPath = pathPrefix + "TransformVertexShader.vertexshader";
         std::string pxShaderPath = pathPrefix + "TextureFragmentShader.fragmentshader";
 
@@ -293,7 +293,7 @@ private:
         glUseProgram(programID);
 
         // Compute the MVP matrix from keyboard and mouse input
-        computeMatricesFromInputs();
+//        computeMatricesFromInputs();
         glm::mat4 ProjectionMatrix = getProjectionMatrix();
         glm::mat4 ViewMatrix = getViewMatrix();
         glm::mat4 ModelMatrix = glm::mat4(1.0);
