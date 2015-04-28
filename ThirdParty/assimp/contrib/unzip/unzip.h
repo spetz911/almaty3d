@@ -49,13 +49,7 @@
 extern "C" {
 #endif
 
-#ifndef _ZLIB_H
-#	ifdef ASSIMP_BUILD_NO_OWN_ZLIB
-#		include <zlib.h>
-#	else
-#		include "../zlib/zlib.h"
-#	endif
-#endif
+#include <zlib.h>
 
 #ifndef _ZLIBIOAPI_H
 #include "ioapi.h"

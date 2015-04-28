@@ -652,6 +652,7 @@ void Sweep::FlipEdgeEvent(SweepContext& tcx, Point& ep, Point& eq, Triangle* t, 
   Triangle& ot = t->NeighborAcross(p);
   Point& op = *ot.OppositePoint(*t, p);
 
+
   if (InScanArea(p, *t->PointCCW(p), *t->PointCW(p), op)) {
     // Lets rotate shared edge one vertex CW
     RotateTrianglePair(*t, p, ot, op);
