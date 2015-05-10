@@ -18,6 +18,9 @@ http://www.opengl-tutorial.org/intermediate-tutorials/
 
 https://github.com/andersonfreitas/opengl-tutorial-org
 
+дока по FBX SDK:
+
+http://help.autodesk.com/view/FBX/2016/ENU/
 
 
 

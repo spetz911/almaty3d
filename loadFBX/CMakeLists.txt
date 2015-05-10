@@ -54,7 +54,7 @@ set(SOURCE_FILES
     src/DisplayTexture.h
     src/DisplayUserProperties.cxx
     src/DisplayUserProperties.h
-    src/main.cxx
+    testFBX.cpp
     )
 
 FIND_LIBRARY(F_LIBRARY Foundation REQUIRED)
